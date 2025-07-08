@@ -27,10 +27,11 @@ const Hero = () => {
             className='flex max-w-[600px] flex-col items-center
             justify-center gap-3 text-center'>
 
-        <h1 className='bg-gradient-to-r from-blue-500 to-pink-500 
-         bg-clip-text text-transparent text-3xl
-         font-light md:text-7xl'>Vijay Pawar</h1>
-
+        <h1 className="text-3xl md:text-7xl font-light bg-gradient-to-r
+         from-pink-500 to-blue-500 bg-clip-text text-transparent leading-[1.2]">
+            Vijay Pawar
+        </h1>
+        <br />
          <h3 className='bg-gradient-to-r from-pink-500 to-blue-500 
          bg-clip-text text-transparent text-1xl md:text-3xl'>
             Full Stack Developer</h3>

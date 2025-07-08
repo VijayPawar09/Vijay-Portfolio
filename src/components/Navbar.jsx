@@ -37,25 +37,24 @@ const Navbar = () => {
          </ul>
 
          <ul className='hidden md:flex gap-5'>
-            <li className='cursor-pointer text-xl opacity-70 
-            transition-all duration-300 hover:text-blue-500 
-            hover:opacity-100'>
-            <a href='https://www.linkedin.com/in/vijay-a-pawar/' target='_blank' rel='noopener noreferrer'></a>
-                <BsLinkedin />    
+            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+            <a href="https://www.linkedin.com/in/vijay-a-pawar/" target="_blank" rel="noopener noreferrer">
+            <BsLinkedin />
+            </a>
             </li>
+
 
             <li className='cursor-pointer text-xl opacity-70 
             transition-all duration-300 hover:text-orange-500 
             hover:opacity-100'>
-            <a href="https://github.com/VijayPawar09" target="_blank" rel="noopener noreferrer"></a>
-                <BsGithub />  
+            <a href="https://github.com/VijayPawar09" target="_blank" rel="noopener noreferrer"><BsGithub />  </a>
             </li>
 
              <li className='cursor-pointer text-xl opacity-70 
             transition-all duration-300 hover:text-red-500 
             hover:opacity-100'>
-            <a href="https://leetcode.com/u/Vijay_Pawar/" target="_blank" rel="noopener noreferrer"></a>
-                <BsTwitterX />
+            <a href="https://x.com/VijayPawar61855" target="_blank" rel="noopener noreferrer"><BsTwitterX /></a>
+                
             </li>
             
             <li className='cursor-pointer text-xl opacity-70 
@@ -99,22 +98,21 @@ const Navbar = () => {
             <li className='cursor-pointer text-xl opacity-70 
             transition-all duration-300 hover:text-blue-500 
             hover:opacity-100'>
-            <a href='https://www.linkedin.com/in/vijay-a-pawar/' target='_blank' rel='noopener noreferrer'></a>
-                <BsLinkedin />    
+            <a href='https://www.linkedin.com/in/vijay-a-pawar/' target='_blank' rel='noopener noreferrer'><BsLinkedin /></a>
+                
             </li>
 
-            <li className='cursor-pointer text-xl opacity-70 
-            transition-all duration-300 hover:text-orange-500 
-            hover:opacity-100'>
-            <a href="https://github.com/VijayPawar09" target="_blank" rel="noopener noreferrer"></a>
-                <BsGithub />  
+            <li className="hover:text-gray-400 transition">
+            <a href="https://github.com/VijayPawar09" target="_blank" rel="noopener noreferrer">
+                <BsGithub />
+            </a>
             </li>
 
              <li className='cursor-pointer text-xl opacity-70 
             transition-all duration-300 hover:text-red-500 
             hover:opacity-100'>
-            <a href="https://leetcode.com/u/Vijay_Pawar/" target="_blank" rel="noopener noreferrer"></a>
-                <BsTwitterX />
+            <a href="https://x.com/VijayPawar61855" target="_blank" rel="noopener noreferrer"><BsTwitterX /></a>
+                
             </li>
             
             <li className='cursor-pointer text-xl opacity-70 

@@ -1,31 +1,58 @@
-import React from 'react'
+import React from "react";
+import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div id='contact' className='flex flex-col min-h-[70vh] min-w-full items-center
-    justify-center'>
-      <div className='flex flex-col items-center justify-center 
-      gap-3 space-y-6 p-14'>
-        <h1 className='text-center texy-5xl md:text-7xl'>
-        <span className='bg-gradient-to-r from-indigo-500 
-        to-blue-500 bg-clip-text text-transparent'>
-          Get in Touch
-        </span>
-        </h1>
+    <div id="contact" className="w-full px-4 py-10 flex flex-col items-center justify-center gap-10">
+      {/* First Row: Address & Socials */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-5xl">
+        {/* Address */}
+        <div className="text-center space-y-3 border border-indigo-500 rounded-2xl px-6 py-6 shadow-md shadow-indigo-800/20">
+          <h2 className="text-white text-3xl md:text-4xl font-semibold">Address</h2>
+          <p className="text-gray-400 text-2xl md:text-3xl font-medium">
+            Pune, Maharashtra
+          </p>
+        </div>
 
-        <p className='text-center text-lg font-semibold text-gray-500'>
-          Want to chat? Send an Email through this button and I'll respond 
-          Whenever I can.
-        </p>
-        
-        <a href='mailto:vijayp8477@gmaol.com' className='text-nowrap rounded-lg border border-indigo-600 bg-black
-        px-5 py-3 text-lg font-bold text-white shadow-lg shadow-indigo-700 
-        transition-all duration-300 hover:translate-y-2 hover:shadow-xl hover:shadow-indigo-600'>
-          Contact Me
-        </a>
+        {/* Social Profiles */}
+        <div className="text-center space-y-3 border border-indigo-500 rounded-2xl px-6 py-6 shadow-md shadow-indigo-800/20">
+          <h2 className="text-white text-3xl md:text-4xl font-semibold">Social Profiles</h2>
+          <ul className="flex justify-center gap-6 pt-2 text-3xl">
+            <li className="text-blue-500 hover:scale-110 transition-transform duration-300">
+              <a href="https://www.linkedin.com/in/vijay-a-pawar/" target="_blank" rel="noopener noreferrer">
+                <BsLinkedin />
+              </a>
+            </li>
+            <li className="text-orange-500 hover:scale-110 transition-transform duration-300">
+              <a href="https://github.com/VijayPawar09" target="_blank" rel="noopener noreferrer">
+                <BsGithub />
+              </a>
+            </li>
+            <li className="text-red-500 hover:scale-110 transition-transform duration-300">
+              <a href="https://x.com/VijayPawar61855" target="_blank" rel="noopener noreferrer">
+                <BsTwitterX />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Second Row: Email & Contact */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-5xl">
+        {/* Email */}
+        <div className="text-center space-y-3 border border-indigo-500 rounded-2xl px-6 py-6 shadow-md shadow-indigo-800/20">
+          <h2 className="text-white text-3xl md:text-4xl font-semibold">Email</h2>
+          <p className="text-gray-400 text-2xl font-medium">vijayp8477@gmail.com</p>
+        </div>
+
+        {/* Contact */}
+        <div className="text-center space-y-3 border border-indigo-500 rounded-2xl px-6 py-6 shadow-md shadow-indigo-800/20">
+          <h2 className="text-white text-3xl md:text-4xl font-semibold">Contact</h2>
+          <p className="text-gray-400 text-2xl font-medium">+91 84599-35504</p>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
