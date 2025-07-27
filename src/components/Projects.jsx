@@ -1,30 +1,35 @@
 import React from 'react';
+import { FaGithub } from "react-icons/fa"; 
 import { motion } from 'framer-motion';
 import image from '../Images/image.jpg'; // Replace with your actual image path
+import PA from '../Images/PA.png'
+import SkillSwap from '../Images/SkillSwap.png'
+import citycare from '../Images/CityCare.png'
 
 const projectData = [
   {
-    image: image,
+    image: PA,
     title: "Eldely Personal Assistance",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description: "Elderly Personal Assistance is a compassionate web platform designed to connect senior citizens with trusted personal assistants for daily support. The system allows customers (elders) to browse verified assistants, view their profiles, assign them tasks, and chat in real-time. It ensures a smooth experience for both customers and assistants with role-based access, profile management, and task booking.",
     technologies: ["React", "TailwindCSS", "Node Js", "Express JS", "Mongo DB"],
+    github: "https://github.com/VijayPawar09/Elderly_Personal_Assistance",
   },
   {
-    image: image,
+    image: SkillSwap,
     title: "Skill Swap",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description: "Skill Swap is a modern web platform that allows users to exchange skills with others in a collaborative and community-driven way. Users can register, list their own skills, and browse others' skills to find ideal learning or teaching partners. The system uses a matching algorithm to suggest potential partners based on skill compatibility, location, and reputation. It also includes real-time messaging and user rating features to foster productive connections.",
     technologies: ["React", "TailwindCSS", "Node Js", "Express JS", "Mongo DB"],
+    github: "https://github.com/VijayPawar09/SkillSwap",
   },
   {
-    image: image,
-    title: "Expense Tracker",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image: citycare,
+    title: "City Care",
+    description: "City Care is a citizen-focused web application that enables real-time reporting of civic issues like potholes, streetlight failures, garbage dumps, or water leakage. Designed to enhance smart city governance, it empowers residents to report problems directly to municipal authorities and track resolution progress. The app also features community voting, status updates, and an admin dashboard for issue management.",
     technologies: ["React", "TailwindCSS", "Node Js", "Express JS", "Mongo DB"],
+    github: "https://github.com/VijayPawar09/CityCare",
   },
 ];
+
 
 const containerVariants = {
   hidden: {},
@@ -58,7 +63,8 @@ const ProjectCard = ({ project }) => (
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-3">
           <div className="text-xl font-semibold">{project.title}</div>
-          <p className="text-gray-400">{project.description}</p>
+          <p className="text-gray-200">{project.description}</p>
+
           <div className="flex flex-wrap gap-5">
             {project.technologies.map((tech, index) => (
               <span key={index} className="rounded-lg bg-black p-3">
@@ -66,6 +72,19 @@ const ProjectCard = ({ project }) => (
               </span>
             ))}
           </div>
+
+          {/* GitHub Link Button */}
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 w-fit rounded-md border border-white px-4 py-2 text-sm font-medium text-white hover:bg-white hover:text-black transition"
+            >
+              <FaGithub className="text-xl" />
+              View on GitHub
+            </a>
+          )}
         </div>
       </div>
     </div>
