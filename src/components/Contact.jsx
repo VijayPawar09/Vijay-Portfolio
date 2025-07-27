@@ -9,7 +9,7 @@ const Contact = () => {
         {/* Address */}
         <div className="text-center space-y-3 border border-indigo-500 rounded-2xl px-6 py-6 shadow-md shadow-indigo-800/20">
           <h2 className="text-white text-3xl md:text-4xl font-semibold">Address</h2>
-          <p className="text-gray-400 text-2xl md:text-3xl font-medium">
+          <p className="text-gray-200 text-2xl md:text-3xl font-medium">
             Pune, Maharashtra
           </p>
         </div>
@@ -42,13 +42,13 @@ const Contact = () => {
         {/* Email */}
         <div className="text-center space-y-3 border border-indigo-500 rounded-2xl px-6 py-6 shadow-md shadow-indigo-800/20">
           <h2 className="text-white text-3xl md:text-4xl font-semibold">Email</h2>
-          <p className="text-gray-400 text-2xl font-medium">vijayp8477@gmail.com</p>
+          <p className="text-gray-200 text-2xl font-medium">vijayp8477@gmail.com</p>
         </div>
 
         {/* Contact */}
         <div className="text-center space-y-3 border border-indigo-500 rounded-2xl px-6 py-6 shadow-md shadow-indigo-800/20">
           <h2 className="text-white text-3xl md:text-4xl font-semibold">Contact</h2>
-          <p className="text-gray-400 text-2xl font-medium">+91 84599-35504</p>
+          <p className="text-gray-200 text-2xl font-medium">+91 84599-35504</p>
         </div>
       </div>
     </div>

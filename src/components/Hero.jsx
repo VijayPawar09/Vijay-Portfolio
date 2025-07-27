@@ -36,7 +36,7 @@ const Hero = () => {
          bg-clip-text text-transparent text-1xl md:text-3xl'>
             Full Stack Developer</h3>
         
-        <p className='md:text-base text-pretty text-sm text-gray-400'>
+        <p className='md:text-base text-pretty text-sm text-gray-200'>
             Skilled in React, Node.js, Express, and MongoDB for full-stack development, with strong experience building dynamic web applications using the MERN stack. Proficient in JavaScript, Java, SQL, PostgreSQL, and data structures and algorithms (DSA), enabling the creation of robust, scalable, and efficient solutions across both frontend and backend environments
         </p>
             </motion.div>

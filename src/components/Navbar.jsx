@@ -102,7 +102,7 @@ const Navbar = () => {
                 
             </li>
 
-            <li className="hover:text-gray-400 transition">
+            <li className="hover:text-gray-200 transition">
             <a href="https://github.com/VijayPawar09" target="_blank" rel="noopener noreferrer">
                 <BsGithub />
             </a>
